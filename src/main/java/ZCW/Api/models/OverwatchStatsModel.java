@@ -15,11 +15,15 @@ public class OverwatchStatsModel {
     private String username;
     private int level;
     private String portrait;
+    private String levelFrame;
+    private String star;
 
-    public OverwatchStatsModel(String username, int level, String portrait){
+    public OverwatchStatsModel(String username, int level, String portrait, String levelFrame, String star){
         this.username = username;
         this.level = level;
         this.portrait = portrait;
+        this.levelFrame = levelFrame;
+        this.star = star;
     }
 
     public OverwatchStatsModel(){}
@@ -55,4 +59,21 @@ public class OverwatchStatsModel {
     public void setPortrait(String portrait) {
         this.portrait = portrait;
     }
+
+    public String getLevelFrame() {
+        return levelFrame;
+    }
+
+    public void setLevelFrame(String levelFrame) {
+        this.levelFrame = levelFrame;
+    }
+
+    public String getStar() {
+        return star;
+    }
+
+    public void setStar(String star) {
+        this.star = star;
+    }
+
 }
